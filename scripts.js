@@ -7,7 +7,7 @@ $(function(){
 });
 
 $(function(){
-    $('#mobilenav').hover(function(){
+    $('#mobilenav').click(function(){
         $(this).animate({height:'500px'},500);
     },function(){
         $(this).animate({height:'50px'},500);
