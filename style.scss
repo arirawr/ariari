@@ -9,11 +9,15 @@ body {
 	margin: 0;
 	width: 100vw;
 	background-image: url("struckaxiom_@2X.png");
-	border-left: 40px solid #ffff44;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 #nav { 
-	width: 35px;
+	width: 40px;
 	height: 100%;
 	position: fixed;
 	top: 0;
@@ -21,6 +25,7 @@ body {
 	z-index: 100;
 	background: #151515;
 	overflow: hidden;
+	border-right: 5px solid #ffff66;
 
 	ul {
 		margin: 0;
@@ -88,6 +93,11 @@ h1, h2, h3, h4, h5, h6, p {
 	text-transform: uppercase;
 }
 
+h3 {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
 /* sections */
 
 section {
@@ -102,8 +112,44 @@ section {
 	padding: 0 0 15% 0;
 }
 
-#options {
+#quicklink {
+	flex-direction: column;
 	background-color: rgba(0, 0, 0, 0.8);
+	padding-top: 5%;
+	color: #ddd;
+
+	#options {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+
+		.section-nav {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 10% 25% 20% 25%;
+			color: #ddd;
+		}
+
+		svg {
+			fill: #ffffaa;
+			-webkit-transition: fill 700ms ease;
+		    -moz-transition: fill 700ms ease;
+		    -o-transition: fill 700ms ease;
+		    -ms-transition: fill 700ms ease;
+		    transition: fill 700ms ease;
+
+			&:hover {
+				fill: #ffff66;
+			}
+		}
+	}
+}
+
+#whoami {
+	height: 90vh;
 }
 
 /* elements */
