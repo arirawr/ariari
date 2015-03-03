@@ -1,25 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100);
 * {
   box-sizing: border-box;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
+  font-family: Raleway, Helvetica, Arial, sans-serif; }
 
 body {
   margin: 0;
-  width: 100vw; }
+  width: 100vw;
+  background-image: url("struckaxiom_@2X.png"); }
+
+/* text styles */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+#name {
+  font-size: 400px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 900;
+  text-transform: uppercase; }
+
+#lastname {
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 900;
+  text-transform: uppercase; }
 
 /* sections */
 section {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
-  padding: 15% 0; }
+  justify-content: center; }
 
 #cover {
-  height: 100vh;
-  background-color: #eee; }
+  flex-direction: column;
+  padding: 0 0 15% 0; }
 
 #options {
-  background-color: #222; }
+  background-color: rgba(0, 0, 0, 0.8); }
 
 /* elements */
 .section-nav {
