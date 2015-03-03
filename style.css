@@ -109,13 +109,13 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0; }
 
 #name {
-  font-size: 400px;
+  font-size: 30vw;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 900;
   text-transform: uppercase; }
 
 #lastname {
-  font-size: 100px;
+  font-size: 7vw;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 900;
   text-transform: uppercase; }
@@ -123,6 +123,10 @@ h1, h2, h3, h4, h5, h6, p {
 h3 {
   font-weight: 400;
   text-transform: uppercase; }
+
+.blurb {
+  text-align: center;
+  line-height: 25px; }
 
 /* sections */
 section {
@@ -171,6 +175,9 @@ section {
 
 /* mobile */
 @media screen and (max-width: 400px) {
+  #cover {
+    margin-top: 70px; }
+
   #mobilenavhead {
     display: block; }
 
