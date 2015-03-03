@@ -81,6 +81,8 @@ a {
 	z-index: 101;
 	background: #151515;
 	overflow: hidden;
+	border-top: 5px solid #ffff66;
+	cursor: pointer;
 }
 
 #mobilenav {
@@ -94,7 +96,7 @@ a {
 	ul {
 		margin: 0;
 		padding: 0;
-		width: 200px;
+		width: 100%;
 		list-style: none;
 	}
 

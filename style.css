@@ -61,7 +61,9 @@ a {
   top: 0;
   z-index: 101;
   background: #151515;
-  overflow: hidden; }
+  overflow: hidden;
+  border-top: 5px solid #ffff66;
+  cursor: pointer; }
 
 #mobilenav {
   display: none;
@@ -73,7 +75,7 @@ a {
   #mobilenav ul {
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 100%;
     list-style: none; }
   #mobilenav li {
     padding: 20px 0;
