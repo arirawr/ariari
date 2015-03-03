@@ -5,18 +5,31 @@
 
 body {
 	margin: 0;
+	width: 100vw;
 }
 
 /* sections */
 
 section {
 	display: flex;
+	width: 100%;
 	align-items: center;
 	justify-content: center;
-	padding: 15%;
+	padding: 15% 0;
 }
 
 #cover {
 	height: 100vh;
+	background-color: #eee;
+}
+
+#options {
+	background-color: #222;
+}
+
+/* elements */
+
+.section-nav {
+	margin: 0 10%;
 }
 
