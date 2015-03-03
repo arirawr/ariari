@@ -53,6 +53,47 @@ a {
       font-size: 20px;
       margin: 0 20px 0 10px; }
 
+#mobilenav {
+  display: none;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: #151515;
+  overflow: hidden;
+  border-right: 5px solid #ffff66; }
+  #mobilenav ul {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    list-style: none; }
+  #mobilenav li {
+    padding: 20px 0;
+    cursor: pointer;
+    -webkit-transition: background-color 700ms ease;
+    -moz-transition: background-color 700ms ease;
+    -o-transition: background-color 700ms ease;
+    -ms-transition: background-color 700ms ease;
+    transition: background-color 700ms ease; }
+    #mobilenav li a {
+      color: #ccc; }
+    #mobilenav li:hover {
+      background-color: #ffffaa; }
+      #mobilenav li:hover a {
+        color: #222; }
+  #mobilenav a {
+    font-size: 14px;
+    text-decoration: none;
+    -webkit-transition: color 700ms ease;
+    -moz-transition: color 700ms ease;
+    -o-transition: color 700ms ease;
+    -ms-transition: color 700ms ease;
+    transition: color 700ms ease; }
+    #mobilenav a span {
+      font-size: 20px;
+      margin: 0 20px 0 10px; }
+
 /* text styles */
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -118,5 +159,13 @@ section {
 /* elements */
 .section-nav {
   margin: 0 10%; }
+
+/* mobile */
+@media screen and (max-width: 400px) {
+  #mobilenav {
+    display: block; }
+
+  #nav {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -72,6 +72,62 @@ a {
 	}
 }
 
+#mobilenav {
+	display: none;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	background: #151515;
+	overflow: hidden;
+	border-right: 5px solid #ffff66;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		width: 200px;
+		list-style: none;
+	}
+
+	li {
+		padding: 20px 0;
+		cursor: pointer;
+		a {
+			color: #ccc;
+		}
+
+	    -webkit-transition: background-color 700ms ease;
+	    -moz-transition: background-color 700ms ease;
+	    -o-transition: background-color 700ms ease;
+	    -ms-transition: background-color 700ms ease;
+	    transition: background-color 700ms ease;
+		
+		&:hover {
+			background-color: #ffffaa;
+			a {
+				color: #222;
+			}
+		}
+	}
+
+	a {
+		font-size: 14px;
+		text-decoration: none;
+
+		-webkit-transition: color 700ms ease;
+	    -moz-transition: color 700ms ease;
+	    -o-transition: color 700ms ease;
+	    -ms-transition: color 700ms ease;
+	    transition: color 700ms ease;
+
+		span {
+			font-size: 20px;
+			margin: 0 20px 0 10px;
+		}
+	}
+}
+
 /* text styles */
 
 h1, h2, h3, h4, h5, h6, p {
@@ -156,5 +212,16 @@ section {
 
 .section-nav {
 	margin: 0 10%;
+}
+
+/* mobile */
+
+@media screen and (max-width: 400px) {
+	#mobilenav {
+		display: block;
+	}
+	#nav {
+		display: none;
+	}
 }
 
