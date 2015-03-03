@@ -4,9 +4,11 @@ $(function(){
     },function(){
         $(this).animate({width:'35px'},500);
     });
+
+    $( "#mobilenavhead" ).click(function() {
+	  $( "#mobilenav" ).slideToggle( "slow", function() {
+	    // Animation complete.
+	  });
+	});
 });
 
-$(function(){
-    $('#mobilenavhead').click(function(){
-        $(#mobilenav).toggle;
-});
