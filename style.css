@@ -6,7 +6,48 @@
 body {
   margin: 0;
   width: 100vw;
-  background-image: url("struckaxiom_@2X.png"); }
+  background-image: url("struckaxiom_@2X.png");
+  border-left: 40px solid #ffff44; }
+
+#nav {
+  width: 35px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #151515;
+  overflow: hidden; }
+  #nav ul {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    list-style: none; }
+  #nav li {
+    padding: 20px 0;
+    cursor: pointer;
+    -webkit-transition: background-color 700ms ease;
+    -moz-transition: background-color 700ms ease;
+    -o-transition: background-color 700ms ease;
+    -ms-transition: background-color 700ms ease;
+    transition: background-color 700ms ease; }
+    #nav li a {
+      color: #ccc; }
+    #nav li:hover {
+      background-color: #ffffaa; }
+      #nav li:hover a {
+        color: #222; }
+  #nav a {
+    font-size: 14px;
+    text-decoration: none;
+    -webkit-transition: color 700ms ease;
+    -moz-transition: color 700ms ease;
+    -o-transition: color 700ms ease;
+    -ms-transition: color 700ms ease;
+    transition: color 700ms ease; }
+    #nav a span {
+      font-size: 20px;
+      margin: 0 20px 0 10px; }
 
 /* text styles */
 h1, h2, h3, h4, h5, h6, p {
