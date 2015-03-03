@@ -244,5 +244,15 @@ section {
 	#nav {
 		display: none;
 	}
+	#quicklink {
+		padding: 20% 0 15% 0;
+	}
+	#options {
+		display: block !important;
+
+		.section-nav {
+			padding: 5% 0 !important;
+		}
+	}
 }
 

@@ -185,6 +185,14 @@ section {
     display: none; }
 
   #nav {
-    display: none; } }
+    display: none; }
+
+  #quicklink {
+    padding: 20% 0 15% 0; }
+
+  #options {
+    display: block !important; }
+    #options .section-nav {
+      padding: 5% 0 !important; } }
 
 /*# sourceMappingURL=style.css.map */
