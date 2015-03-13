@@ -10,7 +10,9 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  margin: 0;
+  padding: 0; }
 
 #nav {
   width: 40px;
